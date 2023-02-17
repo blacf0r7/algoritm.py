@@ -1,0 +1,15 @@
+min = abs(int(input("кол-во минут:")))
+mes = abs(int(input("кол-во сообщений:")))
+pay = 15
+if min < 50 and mes < 50:
+    pay += 0
+if min > 50:
+    pay += ((min - 50) * 0.25)
+    print("штраф за минуты:", ((min - 50) * 0.25))
+if mes > 50:
+    pay += ((mes - 50) * 0.25)
+    print("штраф за сообщения:",((mes - 50) * 0.25))
+nalogi = ((pay + 0.44)* 0.05)
+print("налог:", nalogi)
+pay += ((0.44 + pay) * 0.05)
+print("итого:",pay)
