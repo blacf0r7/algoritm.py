@@ -1,0 +1,12 @@
+slovar = {
+    'стикер 1': 20,
+    'стикер 5': 60,
+    'стикер 7': 20,
+    'конфета 8': 100,
+    'японская жевачка 9': 100
+}
+itog = 0
+for key, value in slovar.items():
+    print(key,':', value)
+    itog = itog + value
+print(itog)
